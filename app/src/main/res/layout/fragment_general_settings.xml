@@ -1,14 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".general_settings">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/btnLogIn2"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="350dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
 
-</FrameLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="461dp"
+
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="88dp"
+        android:background="#278B8B"
+        android:backgroundTint="#278B8B"
+
+        android:fontFamily="monospace"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="3"
+        android:text="CONNECT"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="#278B8B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpass" />
+
+    <EditText
+        android:id="@+id/txtUser2"
+        android:layout_width="363dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/style_edit_text"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Device Name"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        android:textColor="#5A5A5A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtUser3"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="398dp"
+        android:layout_marginBottom="155dp"
+        android:background="@drawable/style_edit_text"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="00:1B:44:11:3A:B7"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        android:textColor="#5A5A5A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="258dp"
+        android:text="Enter Your MAC number and a name for your device:"
+        android:textAlignment="gravity"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/connect" />
+</RelativeLayout>

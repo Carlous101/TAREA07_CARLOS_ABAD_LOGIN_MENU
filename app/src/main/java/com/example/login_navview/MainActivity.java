@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String url = "https://my-json-server.typicode.com/Carlous101/users/data?user=";
     RequestQueue rqueue;
     EditText usr, pass;
-    Button login;
+    Button login, btn;
     String full_name;
     String img;
     String rol;
@@ -41,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
         usr = (EditText)findViewById(R.id.txtUser);
         pass = (EditText)findViewById(R.id.txtpass);
         login = (Button)findViewById(R.id.btnLogIn);
+
+        btn=findViewById(R.id.btnRegister);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent register= new Intent(MainActivity.this, MainActivitySingUp.class);//Que se valla a la de registrar.
+                startActivity(register);
+            }
+        });
 
         login.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -82,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                            in.putExtra("img", img);
                            in.putExtra("rol", rol);
                            in.putExtra("mail", mail);
+
                            startActivity(in);
                        }
                    }

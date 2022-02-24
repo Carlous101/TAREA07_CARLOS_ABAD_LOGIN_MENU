@@ -7,16 +7,16 @@
 
         <item
             android:id="@id/main_menu"
-            android:title="Menú Principal"
+            android:title="Home"
             android:icon="@drawable/top_menu_50px"/>
 
 
         <item android:id="@+id/manage_users"
-              android:title="Gestionar Usuarios"
+              android:title="Data view"
               android:icon="@drawable/manage_users_32px"/>
 
         <item android:id="@id/general_settings"
-              android:title="Ajustes Generales"
+              android:title="Device"
               android:icon="@drawable/settings_30px"/>
 
         <item

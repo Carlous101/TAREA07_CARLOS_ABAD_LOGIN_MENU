@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_NavView">
         <activity
+            android:name=".MainActivitySingUp"
+            android:exported="false" />
+        <activity
             android:name=".NavDrawOptions"
             android:label="@string/title_activity_nav_draw_options"
-            android:theme="@style/Theme.Login_NavView.NoActionBar"></activity>
+            android:theme="@style/Theme.Login_NavView.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
